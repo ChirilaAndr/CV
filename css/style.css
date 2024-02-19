@@ -1,0 +1,168 @@
+/* ------General classes-------- */ 
+
+p{ 
+margin: 15px 0;
+}
+
+.grey-text{
+	color: #757575;
+}
+
+.green-text{
+	color: #009688;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+hr{
+	margin: 20px 0;
+	color: #757575;
+}
+
+.grey-bckgr{
+	background-color: #f1f1f1;
+}
+
+.green-bckgr{
+	background-color: #009688;
+}
+
+.pannel{
+	background-color:white;
+	box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+ul {
+	list-style-type: disc;
+	
+}
+
+li{
+	margin:16px;
+	color: black;
+}
+
+.collapsible-content {
+	overflow: hidden;
+	max-height: 0;
+	transition: max-height 0.5s ease-in-out; 
+}
+
+.active{
+	display:block;
+}
+
+a{
+	color: #009688;
+}
+
+/* ----------- General Container ------------ */
+
+
+.general-container{
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+
+
+
+/* --------Left Column-------- */
+
+
+.img{
+	width:100%;
+	position: relative;
+}
+	
+.name{
+	padding: 10px;
+	font-size: 32px;
+	font-weight: 400;
+}
+
+.icon{
+	color: #009688;
+	margin-right: 16px;
+	font-size: 18px;
+}
+
+.pers-details{
+	padding: 0 16px 0 16px;
+}
+
+.sub-title{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.skill-bar{
+	font-size: 12px;
+	border-radius: 16px;
+	text-align: center;
+	color: white;
+}
+
+.profile-social-media{
+	display:flex;
+	font-size:24px;
+}
+
+.profile-social-media a{
+	padding:0 10px 0 0;
+}
+
+/* ------Work Experience & Education ------ */
+
+.title{
+	font-size: 32px;
+	padding: 12px 0;
+}
+
+.work-exp{
+	padding: 0 8px;
+	margin: 10px 0;
+}
+
+.ongoing{
+	background-color: #009688;
+	color: white;
+	padding: 2px 8px;
+	border-radius: 4px;
+}
+
+.job-title{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+}
+
+.toggle-icon:hover{
+	cursor:pointer;
+}
+
+/* ------ Footer ------ */
+
+.footer-text{
+	padding: 15px 0;
+	color: white;
+	text-align: center;
+}
+
+.social-media{
+	text-align: center;
+	font-size: 16px;
+	padding-bottom: 15px;
+}
+	
+.social-media-icon:hover{
+	color: #757575;
+}
+
+.social-media-icon{
+	color: white;
+}
