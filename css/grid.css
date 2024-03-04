@@ -48,6 +48,12 @@
 	.col-xs-12 {width: 100%;}
 	.hidden{display:none;}
 	.profile-social-media{padding-bottom:15px;}
+	.title{
+		font-size: 25px;
+		padding: 8px 0;
+	}
+	.chat-with img {width: 100px;}
+	.chat-with {right:30;}
 }
 
 	

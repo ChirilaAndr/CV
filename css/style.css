@@ -173,10 +173,10 @@ a{
     position: fixed;
     right: 20;
     bottom: 80;
-    z-index: 1000; /* Ensures the GIF stays on top of other content. Adjust as necessary. */
+    z-index: 1000; 
 }
 
 .chat-with img {
-    width: 150px; /* Adjust based on the size of your GIF. */
+    width: 150px; 
     height: auto;
 }
