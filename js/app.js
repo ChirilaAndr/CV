@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     toggleIcons.forEach(function (toggleIcon) {
         toggleIcon.addEventListener('click', function () {
-            var grandParentElement = this.parentNode.parentNode; // Adjust this line as needed
+            var grandParentElement = this.parentNode.parentNode; 
             var collapsibleContent = grandParentElement.querySelector('.collapsible-content');
 
             if (collapsibleContent.style.maxHeight) {
@@ -13,13 +13,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Expand
                 collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + "px";
             }
-
-            // Optionally toggle the icon class
             this.classList.toggle('fa-chevron-down');
             this.classList.toggle('fa-chevron-up');
         });
     });
 });
 
-
-console.log("hello");
+document.getElementById('chatWith').addEventListener('click', function(event) {
+    const img = event.target; 
+    if (!img) return; 
+    const rect = img.getBoundingClientRect(); 
+    const xClick = event.clientX - rect.left; 
+    const yClick = event.clientY - rect.top; 
+    if (xClick > rect.width - 25 && yClick < 25) {
+        img.parentElement.style.display = 'none'; 
+    }
+});

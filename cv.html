@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="./css/reset.css">
 		<link rel="stylesheet" href="./css/style.css"> 
 		<link rel="stylesheet" href="./css/grid.css"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<style> html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif; line-height: 1.5; font-size: 15px; } </style>
 	</head>
 	
@@ -31,7 +31,7 @@
 						</div>
 						<div class="pers-details">
 							<p class="grey-text">
-								<i class="fa fa-briefcase icon" aria-hidden="true"></i> Project Manager
+								<i class="fa fa-briefcase icon" aria-hidden="true"></i> Project Manager / Product Owner
 							</p>
 							<p class="grey-text">
 								<i class="fa fa-home icon" aria-hidden="true"></i> Cluj-Napoca
@@ -48,10 +48,10 @@
 								<a href="https://medium.com/@chirila.andr" target="_blank"><i class="fa fa-medium green-text"></i></a>
 							</div>
 
-							<hr>
+							<hr class="hidden">
 
 							<!-- Certifications -->
-
+							<div class="hidden">
 							<p class="sub-title grey-text">
 								<i class="fa fa-bar-chart icon" aria-hidden="true"></i> Certifications
 							</p>
@@ -127,6 +127,7 @@
 
 							<br>
 						</div>
+						</div>
 					</div>
 				</div>
 				
@@ -149,8 +150,8 @@
 									I have worked with various types of customers from different countries but also managed local products with great success.
 								</p>
 								<div>
-									<a href="./CV/Andrei Chirila CV (short version).pdf" class="ongoing" target="_blank"> Download short CV</a>	
-									<a href="./CV/Andrei Chirila CV.pdf" class="ongoing" target="_blank"> Download full CV</a>
+									<a href="./cv/Andrei Chirila CV (short version).pdf" class="ongoing" target="_blank"> Download short CV</a>	
+									<a href="./cv/Andrei Chirila CV.pdf" class="ongoing" target="_blank"> Download full CV</a>
 								</div>
 								
 							</div>
@@ -460,6 +461,10 @@
 		</div>
 	
 	<!-- Footer -->
+
+	<div class="chat-with" id="chatWith">
+		<img src="./img/Chat with (1).gif" alt="Your GIF">
+	</div>
 	
 	<div class="green-bckgr">
 		<h5 class="footer-text"> Look me up on my social media platforms </h5>
@@ -475,16 +480,17 @@
 		</script>
 
 		<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/gh/ChirilaAndr/FlowiseChatEmbed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "f3b45eb8-caab-4e48-99d7-447e03878870",
-        apiHost: "https://flowise-ai-ygl3.onrender.com",
-	     theme:{
+			import Chatbot from "https://cdn.jsdelivr.net/gh/ChirilaAndr/FlowiseChatEmbed@latest/dist/web.js"
+   				 Chatbot.init({
+    		     chatflowid: "69f05b65-e387-4afc-b23d-f4eba610f115",
+        		 apiHost: "https://flowise-ai-ygl3.onrender.com",
+				 theme:{
 					button: {
-						backgroundColor:"#009688"
+						backgroundColor:"#009688",
+						size: "large"
 					},
 					chatWindow: {
-						welcomeMessage:"Hello, I am Andrei 2.0 🤖, AI assistant and personal friend of Andrei.\n I am here to answer questions about him and his experience.\n \nHow can I help you?",
+						welcomeMessage:"Hello, I am Andrei 2.0 🤖 and I am here to answer questions about Andrei and his experience.\n \nHow can I help you?",
 						userMessage: {
 							backgroundColor:"#009688"
 						},
@@ -492,11 +498,10 @@
 							sendButtonColor:"#009688"
 						}
 					},
-
-
 				}
-    })
-</script>
+				
+			})
+		</script>
 
 	
 	</body>

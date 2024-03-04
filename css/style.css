@@ -166,3 +166,17 @@ a{
 .social-media-icon{
 	color: white;
 }
+
+/* -------- GIF ---------- */
+
+.chat-with {
+    position: fixed;
+    right: 20;
+    bottom: 80;
+    z-index: 1000; /* Ensures the GIF stays on top of other content. Adjust as necessary. */
+}
+
+.chat-with img {
+    width: 150px; /* Adjust based on the size of your GIF. */
+    height: auto;
+}
