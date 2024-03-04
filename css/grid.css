@@ -54,6 +54,8 @@
 	}
 	.chat-with img {width: 100px;}
 	.chat-with {right:30;}
+	.flex{display:flex; flex-direction:column;}
+	.ongoing{margin-top:5px;}
 }
 
 	
